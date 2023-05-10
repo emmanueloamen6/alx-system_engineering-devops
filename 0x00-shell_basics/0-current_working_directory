@@ -1,1 +1,2 @@
-pwd -L
+#!/bin/bash
+pwd
