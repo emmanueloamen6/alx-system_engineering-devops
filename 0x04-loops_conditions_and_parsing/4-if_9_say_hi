@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #display Best School in 10 times except the 9th times, Hi
 
-COUNTER=0
+COUNTER=1
 while (($COUNTER < 11))
 do
     if (($COUNTER == 9))
