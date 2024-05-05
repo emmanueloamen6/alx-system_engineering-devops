@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#display Best School in 10 times except the 9th times, Hi
+
+COUNTER=0
+while (($COUNTER < 11))
+do
+    if (($COUNTER == 9))
+    then
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+    ((COUNTER++))
+done
