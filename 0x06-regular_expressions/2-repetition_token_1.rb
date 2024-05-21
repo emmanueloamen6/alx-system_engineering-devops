@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-# script that accepts one argument and pass it to a regular expression.
-puts ARGV[0}.scan(/tb?tn/).join
+# A regular expression that is matches a given pattern
+puts ARGV[0].scan(/hb?tn/).join
