@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-
-puts ARGV[0].scan(/hbt{0,5}n/).join
+# A regular expression that match given pattern
+puts ARGV[0].scan(/hbt{0,}n/).join
