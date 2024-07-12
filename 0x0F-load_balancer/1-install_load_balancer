@@ -13,7 +13,7 @@ frontend google
 
 backend app
    balance roundrobin
-   server 360811-web-01 52.91.144.193 check
-   server 360811-web-02 54.160.72.159 check" >> /etc/haproxy/haproxy.cfg
+   server 360811-web-01 52.91.144.193:80 check
+   server 360811-web-02 54.160.72.159:80 check" >> /etc/haproxy/haproxy.cfg
 
 sudo service haproxy restart
