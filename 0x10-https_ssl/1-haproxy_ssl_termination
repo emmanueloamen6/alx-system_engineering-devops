@@ -40,10 +40,11 @@ defaults
 
 frontend http
     bind *:80
-    bind *:443 ssl crt /etc/letsencrypt/live/www.oseto4life.tech/oseto4life.pem
-    mode http
+    bind *:443 ssl crt /etc/haproxy/certs/www.oseto4life.tech.pem
+    redirect scheme https code 301 if !{ ssl_fc }
+    default_backend app
 
-backend oseto4life
+backend app
     balance roundrobin
     server 360811-web-01 52.91.144.193:80 check
     server 360811-web-02 54.160.72.159:80 check
